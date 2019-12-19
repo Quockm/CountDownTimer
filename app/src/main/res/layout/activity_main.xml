@@ -7,20 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageviewBanner"
-        android:scaleType="fitXY"
+<!--    <ImageView-->
+<!--        android:id="@+id/imageviewBanner"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp">-->
+<!--    </ImageView>-->
+<!--    <Button-->
+<!--        android:id="@+id/ButtonStart"-->
+<!--        android:text="Start"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/imageviewBanner"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    </Button>-->
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
         android:layout_height="200dp">
-    </ImageView>
+
+    </ViewFlipper>
+        <Button
+            android:id="@+id/ButtonStart"
+            android:text="Start"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/viewFlipper"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
     <Button
-        android:id="@+id/ButtonStart"
-        android:text="Start"
+        android:id="@+id/ButtonStop"
+        android:text="Stop"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageviewBanner"
+        android:layout_below="@id/ButtonStart"
         android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     </Button>
+
 
 </RelativeLayout>
